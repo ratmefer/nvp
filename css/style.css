@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+/* Общие стили */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    color: #0a0a0a;
+    font-family: "Inter Tight", serif;
+
+   
+}
+
+.modal {
+    top: 0px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+}
+
+.modal-content {
+    margin-top: 1%;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+
+.close {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Шапка */
+a {
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 75px;
+}
+
+.header_nav{
+    width: 100%;
+}
+
+.header_list {
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+    
+}
+
+.header_list a, .header_btn {
+    font-weight: 500;
+}
+
+.header_btn {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 100px;
+    height: 50px;
+    transition: 1s;
+    background: #10ADEB;
+    border-radius: 2px;  
+}
+.header_btn:hover {
+    transform: scale(1.2);
+}
+
+/* Главная страница */
+.header_btn2 {
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: 1s;
+    width: 200px;
+    height: 60px;
+
+    background: #10adeb;
+    border-radius: 2px;
+}
+.header_btn2:hover {
+    transform: scale(1.2);
+}
+
+.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+h1 {
+    font-size: 61px;
+    font-weight: 600;
+    line-height: 120%;
+    margin-bottom: 14px;
+}
+
+.welcome_desk {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(10, 10, 10, 0.5);
+}
+
+.container_text {
+    width: 536px;
+    height: 403px;
+    margin-left: 75px;
+}
+
+.welcome_img {
+    width: 661px;
+    height: 726px;
+    margin-right: 75px;
+    border-radius: 2px;
+}
+
+.welcome_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    gap: 14px;
+}
+
+/* Новости */
+.news {
+    width: 100%;
+    height: 577px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 140px;
+}
+
+
+.news_btn {
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.title_news {
+    margin-right: 11px;
+    font-family: "Inter Tight", serif;
+    font-weight: 500;
+    color: rgba(10, 10, 10, 0.5);
+}
+
+.title_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 75px 0px 75px;
+}
+
+h2 {
+    font-family: "Inter Tight", serif;
+    font-weight: 600;
+    font-size: 51px;
+}
+
+.news_arrow {
+    width: 16px;
+    height: 13px;
+}
+
+.news_card {
+    margin-top: 37px;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    margin-left: 75px;
+    margin-right: 75px;
+    line-height: 120%;
+    overflow-x: auto;
+    -webkit-overflowscrolling: touch;
+    gap: 25px;
+    scroll-snap-align: start;
+    align-items: center;
+    
+}
+.swiper-pagination-bullet {
+  
+    width: 10px;
+    height: 10px;
+    background: #b5b5b5;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+    background: #10adeb; 
+    opacity: 1;
+}
+
+.card {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    transition: 1s ease-in-out;
+    width: 299px;
+    height: 474px;
+    background-color: #EBEBEB;
+    border-radius: 2px;
+}
+
+
+
+.news_title {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 0px 24px 20px;
+    gap: 11px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 11px;
+    line-height: 110%;
+}
+
+.news_p {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(10, 10, 10, 0.5);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+}
+
+.news_img {
+    margin: 25px 20px  25px 20px;
+}
+
+/* Новости */
+.gallery {
+    width: 100%;
+    display: flex;
+    padding: 0px 75px 0px 75px;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.gallery_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 28px;
+}
+
+.gallerydate{
+    margin: 25px 0px 25px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.gallery_p {
+    margin-bottom: 18px;
+    color: #8e8e8e;
+}
+
+
+
+.card_gallery {
+    width: 310px;
+    height: 357px;
+    background-color:#EBEBEB;
+    border-radius: 2px;
+    
+}
+
+
+
+form{
+    display: flex;
+    width: 100%;
+}
+
+.search{
+    border: none;
+    background-color:  #d6d6d6;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.query{
+    border: none;
+    background-color: #d6d6d6;
+    width: 100%;
+    padding: 10px 10px 10px 5px;
+    border-radius: 2px;
+}
+
+
+
+.search_glass{
+    width: 20px;
+    height: 20px;
+    
+   
+}
+.gallery_cards {
+    width: 100%;
+    height: 440px;
+    display: flex;
+    line-height: 120%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: start;
+    gap: 40px;
+    align-items: center;
+    
+    
+}
+
+.gallery_img {
+    width: 251px;
+    height: 231px;
+    margin: 25px 20px  25px 20px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.galerry_t {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0px 20px  0px 20px;
+    line-height: 110%;
+}
+
+footer {
+    width: 100%;
+    margin-top:auto;
+    height: 270px;
+    background-color: #10ADEB;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+
+
+.date{
+    font-size: 37px;
+    transition: 1s;
+}
+
+
+
+.page{
+     width: 100%;
+     height: 100%;
+     
+}
+
+.footertex{
+
+    color: #fff;
+    font-size: 8px;
+}
+.fot{
+    margin-left: 75px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.fot2{
+    flex-direction: column;
+    display: flex;
+    gap: 8px;
+    margin-right: 20%;
+    justify-content: center;
+}
+.footer_logo{
+    width: 50px;
+
+}
+
+@media (max-width: 480px){
+
+    .header {
+       margin: 15px 20px 25px; 
+    }
+
+    a{
+       font-size: 10px;
+    }
+
+    .header_logo{
+        width: 39px;
+    }
+
+    .header_btn{
+        font-size: 12px;
+        height: 40px;
+        width: 90px;
+
+    }
+
+    .welcome{
+        flex-direction: column-reverse;
+        margin: 0px 20px;
+        width: auto;
+        align-items: normal;
+    
+    }
+    .welcome_img{
+        width: 100%;
+        height: auto;
+    }
+
+    .header_list{
+        justify-content: space-evenly;
+        gap: 0px;
+    }
+
+    .welcome_container{
+        align-items: center;
+        margin-left: 0px;
+        margin-top: 26px;
+        gap: 17px;
+    }
+
+    h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .welcome_desk{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .title_container{
+        margin: 0px 20px;
+    }
+
+    h2{
+        font-size: 30px;
+
+    }
+
+    .news{
+        height: auto;
+        margin: 40px 0px;
+    }
+
+    .news_card{
+        margin: 0px 20px;
+        height: 410px;
+    }
+
+    .news_btn{
+        width: 40%;
+
+    }
+
+    .news_img{
+        width: 169px;
+        height: auto;
+    }
+
+    .card{
+        width: 209px;
+        height: 331px;
+        overflow-y: auto;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    .news_p{
+        width: 169px;
+    }
+
+    .gallery{
+        padding: 0px 20px;
+        margin-bottom: 40px;
+    }
+
+    .gallery_p{
+        font-size: 15px;
+    }
+
+    .gallerydate{
+        margin: 0px;
+    }
+
+    .date{
+        font-size: 19px;
+    }
+
+    .gallery_cards{
+        height: 370px;
+    }
+
+    .card_gallery{
+        width: 248px;
+        height: 286px;
+        
+    }
+
+    .gallery_img{
+        width: 208px;
+        height: 208px;
+        margin-bottom: 15px;
+    }
+
+    .galerry_t{
+        font-size: 10px;
+    }
+
+    footer{
+        height: 160px;
+        padding-top: 10px;
+    }
+
+    .footerlogos{
+        display: flex;
+    }
+
+    .fot{
+        margin-left: 20px;
+    }
+
+    .fot2{
+        margin-right: 20px;
+    }
+
+}
