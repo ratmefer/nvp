@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="swiper-bundle.css">
+    <title>Сайт ВДВ</title>
+</head>
+<body>
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+<div class="page">
+    <header class="header">
+        <img src="img/logo.png" alt="Логотип ВДВ" class="header_logo">
+        <img src="img/logo 2.png" alt="Логотип ВДВ" class="header_logo">
+        <nav class="header_nav">
+            <ul class="header_list">
+                <li><a href="#main" class="headtext">Главная</a></li>
+                <li><a href="#new" class="headtext">Новости</a></li>
+                <li><a href="#gal" class="headtext">Галерея</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="header_btn">Войти</a>
+    </header>
+
+    <main class="main">
+    
+        <section class="welcome" id="main">
+            <div class="welcome_container">
+                <h1>ВДВ Караганды – <br> честь, доблесть, отвага!</h1>
+                <p class="welcome_desk">Узнайте об истории, традициях и современности <br>
+                воздушно-десантных войск в Караганде <br> в одном месте.</p>
+                <a href="#" class="header_btn2">Узнать больше</a>
+            </div>
+            <img src="img/nvp.jpg" alt="Изображение ВДВ Караганды" class="welcome_img">
+        </section>
+
+        <section class="news" id="new">
+            <div class="title_container">
+                <h2>Последние новости</h2>
+                <a href="#" class="news_btn"><p class="title_news">Смотреть все</p> <img class="news_arrow" src="img/arrow.svg" alt=""></a>
+            </div>
+
+            <div class="news_card swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide card">
+                        <img src="img/img2.png" alt="Изображение новости" class="news_img">
+                        <div class="news_title">
+                            <h3>Десантное поздравление<br>
+                                с Новым годом <br>
+                                Полковник Спецназа</h3>
+                                <p class="news_p">Съешь ещё этих мягких французских булок, да выпей же чаю. Съешь ещё этих мягких французских булок, да выпей же чаю </p>
+                        </div>
+                    </div>
+                 
+                    <div class="swiper-slide card">
+                        <img src="img/img2.png" alt="Изображение новости" class="news_img">
+                        <div class="news_title">
+                            <h3>Десантное поздравление<br>
+                                с Новым годом <br>
+                                Полковник Спецназа</h3>
+                                <p class="news_p">Съешь ещё этих мягких французских булок, да выпей же чаю. Съешь ещё этих мягких французских булок, да выпей же чаю </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="img/img2.png" alt="Изображение новости" class="news_img">
+                        <div class="news_title">
+                            <h3>Десантное поздравление<br>
+                                с Новым годом <br>
+                                Полковник Спецназа</h3>
+                                <p class="news_p">Съешь ещё этих мягких французских булок, да выпей же чаю. Съешь ещё этих мягких французских булок, да выпей же чаю </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="img/img2.png" alt="Изображение новости" class="news_img">
+                        <div class="news_title">
+                            <h3>Десантное поздравление<br>
+                                с Новым годом <br>
+                                Полковник Спецназа</h3>
+                                <p class="news_p">Съешь ещё этих мягких французских булок, да выпей же чаю. Съешь ещё этих мягких французских булок, да выпей же чаю </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="img/img2.png" alt="Изображение новости" class="news_img">
+                        <div class="news_title">
+                            <h3>Десантное поздравление<br>
+                                с Новым годом <br>
+                                Полковник Спецназа</h3>
+                                <p class="news_p">Съешь ещё этих мягких французских булок, да выпей же чаю. Съешь ещё этих мягких французских булок, да выпей же чаю </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card">
+                        <img src="img/img2.png" alt="Изображение новости" class="news_img">
+                        <div class="news_title">
+                            <h3>Десантное поздравление<br>
+                                с Новым годом <br>
+                                Полковник Спецназа</h3>
+                                <p class="news_p">Съешь ещё этих мягких французских булок, да выпей же чаю. Съешь ещё этих мягких французских булок, да выпей же чаю </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div> 
+
+        </section>
+
+        <section class="gallery" id="gal">
+            <div class="gallery_title">
+                <h2 class="gallery_h2">Галерея</h2>
+                <p class="gallery_p">Найдите изображения при помощи удобного поиска</p>
+                    <form action="/search" method="get">
+                        <button type="submit" class="search"><img src="search_magnifier_icon_190940.png" class="search_glass" alt=""></button>
+                        <input type="text" class="query" name="query" placeholder="Найти...">
+                    </form>
+            </div>
+            <div class="gallerydate">
+                <a href="" class="date">03.01.2025</a>
+                <a href="" class="date">04.01.2025</a>
+                <a href="" class="date">05.01.2025</a>
+                
+            </div>
+            <div class="gallery_cards swiper" id="slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide card_gallery">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_U8r5K26IgB3SMr2ShSR62TJJ4LM76QLKiw&s" alt="Изображение фото" class="gallery_img">
+                        <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3>
+                    </div>
+
+                    <div class="swiper-slide card_gallery">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyX1fmMaJ5KhfL15ftPdZYMWoEih_x_U8IVg&s" alt="Изображение фото" class="gallery_img">
+                        <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3>
+                    </div>
+
+                    <div class="swiper-slide card_gallery">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8ONcOTzyDllVsSNemQDCP1_Msk_sAA3EJA&s" alt="Изображение фото" class="gallery_img">
+                        <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3>
+                    </div>
+
+                    <div class="swiper-slide card_gallery">
+                        <img src="img/img2.png" alt="Изображение фото" class="gallery_img"> 
+                        <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3> 
+                    </div>
+
+                    <div class="swiper-slide card_gallery">
+                        <img src="img/img2.png" alt="Изображение фото" class="gallery_img"> 
+                        <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3> 
+                    </div>
+
+                    <div class="swiper-slide card_gallery">
+                        <img src="img/img2.png" alt="Изображение фото" class="gallery_img">
+                        <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3> 
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>    
+
+        </section>
+        <footer>
+            <div class="fot">
+                <div class="footerlogos">
+                    <img src="img/logo.png" alt="Логотип ВДВ" class="footer_logo">
+                    <img src="img/logo 2.png" alt="Логотип ВДВ" class="footer_logo">
+                </div>
+               <a href="" class="footertex">ДШВ РК Мутагаров И.С. 2024. Все права защищены</a>
+            </div>
+            <div class="fot2">
+                <a href="" class="footertex">О нас</a>
+                <a href="#main" class="footertex">Главная</a>
+                <a href="#new" class="footertex">Новости</a>
+                <a href="#gal" class="footertex">Галерея</a>
+            </div>
+        </footer>
+   
+    </main>
+ </div>
+
+
+ <script src="swiper-bundle.min.js"></script>
+ <script>
+     var swiper = new Swiper('.news_card', {
+         slidesPerView: 'auto',         
+         pagination: {
+             el: '.swiper-pagination',
+             clickable: true,   
+         },
+                    
+     });
+
+     var swiper = new Swiper('.gallery_cards', {
+         slidesPerView: 'auto',         
+         pagination: {
+             el: '.swiper-pagination',
+             clickable: true,   
+         },
+                    
+     });
+
+     document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("modal");
+    const modalImg = document.getElementById("modal-img");
+    const closeBtn = document.querySelector(".close");
+    
+    
+    document.querySelectorAll(".card_gallery img").forEach(img => {
+        img.addEventListener("click", function () {
+            modal.style.display = "flex";
+            modalImg.src = this.src;
+        });
+    });
+
+   
+    closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+}); 
+ </script>
+
+</body>
+</html>
