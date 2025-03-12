@@ -119,7 +119,7 @@
                 <p class="gallery_p">Найдите изображения при помощи удобного поиска</p>
                     <form action="/search" method="get">
                         <button type="submit" class="search"><img src="search_magnifier_icon_190940.png" class="search_glass" alt=""></button>
-                        <input type="text" class="query" name="query" placeholder="Найти...">
+                        <input type="text" class="query" name="query" placeholder="Найти..." id="elastic">
                     </form>
             </div>
             <div class="gallerydate">
@@ -146,13 +146,13 @@
                     </div>
 
                     <div class="swiper-slide card_gallery">
-                        <img src="img/img2.png" alt="Изображение фото" class="gallery_img"> 
-                        <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3> 
+                        <img src="img/emblema.jpg" alt="Изображение фото" class="gallery_img"> 
+                        <h3 class="galerry_t">эмблема ВДВ Караганды</h3> 
                     </div>
 
                     <div class="swiper-slide card_gallery">
-                        <img src="img/img2.png" alt="Изображение фото" class="gallery_img"> 
-                        <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3> 
+                        <img src="img/tank.jpg" alt="Изображение фото" class="gallery_img"> 
+                        <h3 class="galerry_t">танк, просто танк</h3> 
                     </div>
 
                     <div class="swiper-slide card_gallery">
@@ -229,6 +229,32 @@
         }
     });
 }); 
+
+const elastic = document.querySelector('#elastic')
+
+elastic.addEventListener('input', (ev) => {
+    const value = ev.target.value.trim()
+    const elasticItems = document.querySelectorAll('.card_gallery')
+    const searchRegExp = new RegExp(value, 'gi')
+
+    if (value === '') {
+        elasticItems.forEach((el) => {
+            el.classList.remove('hide')
+        })
+        return
+    }
+
+    elasticItems.forEach((el) => {
+        const innerCard = el.querySelector('.galerry_t')
+        const elementText = innerCard.textContent
+        const isContainsSearchRequest = searchRegExp.test(elementText)
+        if (!isContainsSearchRequest) {
+            el.classList.add('hide')
+        } else {
+            el.classList.remove('hide')
+        }
+    })
+})
  </script>
 
 </body>
