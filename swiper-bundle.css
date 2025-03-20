@@ -21,7 +21,7 @@
   z-index: 1;
 }
 .swiper {
-  margin-right: 75px;
+  padding-right: 95px;
   position: relative;
   overflow: hidden;
   list-style: none;
@@ -714,9 +714,3 @@ button.swiper-pagination-bullet {
           backface-visibility: hidden;
   overflow: hidden;
 }
-
-@media (max-width: 480px){
-      .swiper{
-        margin-right: 20px;
-      }
-    }
