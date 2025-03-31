@@ -42,40 +42,7 @@ elasticItems.forEach((el) => {
 })
 })
 
-document.getElementById('addImageBtn').addEventListener('click', () => {
-   const fileInput = document.getElementById('imageUpload');
-   const titleInput = document.getElementById('imageTitle');
-   const gallery = document.querySelector('.gallery_cards .swiper-wrapper');
 
-   const file = fileInput.files[0];
-   const title = titleInput.value.trim();
-
-   if (file && title) {
-       const reader = new FileReader();
-       reader.onload = function (e) {
-           const newCard = document.createElement('div');
-           newCard.classList.add('swiper-slide','card_gallery');
-           newCard.innerHTML = `
-               <img src="${e.target.result}" alt="Изображение фото" class="gallery_img">
-               <h3 class="galerry_t">${title}</h3>
-           `;
-
-           gallery.appendChild(newCard);
-
-           // Очищаем форму
-           fileInput.value = '';
-           titleInput.value = '';
-
-           // Обновляем Swiper, чтобы он подхватил новую карточку
-           swiper.update();
-
-       };
-
-       reader.readAsDataURL(file);
-   } else {
-       alert('Пожалуйста, выберите изображение и введите название!');
-   }
-});
 
 document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("modal");
