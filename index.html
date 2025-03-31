@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="swiper-bundle.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
     <title>Сайт ВДВ</title>
 </head>
 <body>
@@ -16,15 +16,37 @@
 
 <div class="page">
     <header class="header">
-        <img src="img/logonew.jpg" alt="Логотип ВДВ" class="header_logo">
+        <a href="index.html">
+            <img src="img/logonew.jpg" alt="Логотип ВДВ" class="header_logo">
+        </a>
         <nav class="header_nav">
             <ul class="header_list">
                 <li><a href="#main" class="headtext">Главная</a></li>
                 <li><a href="#new" class="headtext">Новости</a></li>
                 <li><a href="#gal" class="headtext">Галерея</a></li>
             </ul>
+        
         </nav>
-
+        <div class="social">
+            <a href="https://www.instagram.com/irshatmutagarov" target="_blank">
+              <img src="img/insta.png" class="media">
+            </a>
+            <a href="https://www.youtube.com/@%D0%98%D1%80%D1%88%D0%B0%D1%82%D0%9C%D1%83%D1%82%D0%B0%D0%B3%D0%B0%D1%80%D0%BE%D0%B2" target="_blank">
+              <img src="img/youtube.png" class="media">
+            </a>
+            <a href="https://www.facebook.com/people/%D0%98%D1%80%D1%88%D0%B0%D1%82-%D0%9C%D1%83%D1%82%D0%B0%D0%B3%D0%B0%D1%80%D0%BE%D0%B2/pfbid0282T7AqYwdKmy1ZRKCTWGAdJfwWzZE1eoZ8ARQsoZfVtQwoNAKKDBCs9rD3FGU6Rjl/" target="_blank">
+              <img src="img/facebook.png" class="media">
+            </a>
+            <a href="https://ok.ru" target="_blank">
+              <img src="img/ok.png" class="media">
+            </a>
+            <a href="https://vk.com/ir6at" target="_blank">
+                <img src="img/vk.png" class="media">
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=77003668769&text&type=phone_number&app_absent=0" target="_blank">
+                <img src="img/what.png" class="media">
+            </a>
+          </div>          
     </header>
 
     <main class="main">
@@ -42,7 +64,6 @@
         <section class="news" id="new">
             <div class="title_container">
                 <h2>Последние новости</h2>
-                <a href="#" class="news_btn"><p class="title_news">Смотреть все</p> <img class="news_arrow" src="img/arrow.svg" alt=""></a>
             </div>
 
             <div class="news_card swiper">
@@ -117,7 +138,7 @@
                 <h2 class="gallery_h2">Галерея</h2>
                 <p class="gallery_p">Найдите изображения при помощи удобного поиска</p>
                     <form>
-                        <button type="submit" class="search"><img src="search_magnifier_icon_190940.png" class="search_glass"></button>
+                        <button type="submit" class="search"><img src="img/search_magnifier_icon_190940.png" class="search_glass"></button>
                         <input type="text" autocomplete="off" class="query" name="query" placeholder="Найти..." id="elastic">
                         <input type="date" id="elastic" class="searchwhen" value="03.04.27">
                     </form>
@@ -126,17 +147,17 @@
             <div class="gallery_cards swiper" id="slider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide card_gallery">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_U8r5K26IgB3SMr2ShSR62TJJ4LM76QLKiw&s" alt="Изображение фото" class="gallery_img">
+                        <img src="img/IMG-20250320-WA0001.jpg" alt="Изображение фото" class="gallery_img">
                         <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3>
                     </div>
 
                     <div class="swiper-slide card_gallery">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyX1fmMaJ5KhfL15ftPdZYMWoEih_x_U8IVg&s" alt="Изображение фото" class="gallery_img">
+                        <img src="img/IMG-20250320-WA0002.jpg" alt="Изображение фото" class="gallery_img">
                         <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3>
                     </div>
 
                     <div class="swiper-slide card_gallery">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR8ONcOTzyDllVsSNemQDCP1_Msk_sAA3EJA&s" alt="Изображение фото" class="gallery_img">
+                        <img src="img/IMG-20250320-WA0003.jpg" alt="Изображение фото" class="gallery_img">
                         <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3>
                     </div>
 
@@ -151,15 +172,10 @@
                     </div>
 
                     <div class="swiper-slide card_gallery">
-                        <img src="img/img2.png" alt="Изображение фото" class="gallery_img">
+                        <img src="img/IMG-20250320-WA0006.jpg" alt="Изображение фото" class="gallery_img">
                         <h3 class="galerry_t">5 лет РВВДКУ имени Маргелова В. Ф</h3> 
                     </div>
 
-                    <div class="swiper-slide gallery_upload">
-                        <input type="file" id="imageUpload" accept="image/*">
-                        <input type="text" id="imageTitle" placeholder="Введите название">
-                        <button id="addImageBtn">Добавить</button>
-                    </div>
 
                 </div>
                 <div class="swiper-pagination"></div>
@@ -177,10 +193,31 @@
  <footer>
     <div class="fot">
         <div class="footerlogos">
-            <img src="img/logonew.jpg" alt="Логотип ВДВ" class="footer_logo">
-
+            <a href="index.html ">
+                <img src="img/logonew.jpg" alt="Логотип ВДВ" class="footer_logo">
+            </a>
         </div>
-       <a href="" class="footertex">ДШВ РК Мутагаров И.С. 2024. Все права защищены</a>
+        <div class="social">
+            <a href="https://www.instagram.com/irshatmutagarov" target="_blank">
+              <img src="img/insta.png" class="media">
+            </a>
+            <a href="https://www.youtube.com/@%D0%98%D1%80%D1%88%D0%B0%D1%82%D0%9C%D1%83%D1%82%D0%B0%D0%B3%D0%B0%D1%80%D0%BE%D0%B2" target="_blank">
+              <img src="img/youtube.png" class="media">
+            </a>
+            <a href="https://www.facebook.com/people/%D0%98%D1%80%D1%88%D0%B0%D1%82-%D0%9C%D1%83%D1%82%D0%B0%D0%B3%D0%B0%D1%80%D0%BE%D0%B2/pfbid0282T7AqYwdKmy1ZRKCTWGAdJfwWzZE1eoZ8ARQsoZfVtQwoNAKKDBCs9rD3FGU6Rjl/" target="_blank">
+              <img src="img/facebook.png" class="media">
+            </a>
+            <a href="https://ok.ru" target="_blank">
+              <img src="img/ok.png" class="media">
+            </a>
+            <a href="https://vk.com/ir6at" target="_blank">
+                <img src="img/vk.png" class="media">
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=77003668769&text&type=phone_number&app_absent=0" target="_blank">
+                <img src="img/what.png" class="media">
+            </a>
+          </div>     
+       <a class="footertext">ДШВ РК Мутагаров И.С. 2025. Все права защищены</a>
     </div>
     <div class="fot2">
         <a href="" class="footertex">О нас</a>
@@ -190,7 +227,8 @@
     </div>
 </footer>
 
- <script src="swiper-bundle.min.js"></script>
+ <script src="js/swiper-bundle.min.js"></script>
  <script src="js/main.js"></script>
 </body>
 </html>
+
