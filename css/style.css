@@ -8,7 +8,7 @@ html {
 body {
     color: #0a0a0a;
     font-family: "Inter Tight", serif;
-
+    
 
    
 }
@@ -44,6 +44,50 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
+
+.modal1 {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный фон */
+    z-index: 1000; /* Поверх всего */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 23px;
+  }
+
+  .custom-button{
+    border: none;
+    width: 350px;
+    height: 160px;
+    font-size: 23px;
+    transition: 0.5s;
+    border-radius: 2px;
+  }
+
+  .custom-button:hover {
+    transform: scale(1.1);
+  }
+
+  .close-modal {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+  }
 
 /* Шапка */
 a {
@@ -93,7 +137,7 @@ ul {
 }
 
 .header_logo{
-    width: 95px;
+    width: 150px;
     transition: 0.5s;
 }
 
@@ -142,6 +186,7 @@ ul {
 
     background: #10adeb;
     border-radius: 2px;
+    border: none;
 }
 .header_btn2:hover {
     transform: scale(1.1);
@@ -528,6 +573,18 @@ footer {
         justify-content: space-evenly;
         gap: 4px;
     }
+
+    .button-container{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 15px;
+      }
+
+      .custom-button{
+        width: 210px;
+        height: 90px;
+        font-size: 18px;
+      }
 
     .welcome_container{
         align-items: center;
